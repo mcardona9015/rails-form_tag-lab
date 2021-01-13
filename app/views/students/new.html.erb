@@ -1,0 +1,10 @@
+<h2>Student Form</h2>
+<%=form_for @student do |f|%>
+    <label>First Name</label>
+    <%= f.text_area :first_name %>
+
+    <label>Last Name</label>
+    <%= f.text_area :last_name %>
+    <%= f.submit "Submit Student" %>
+<% end %>   
+<%= params.inspect%>
